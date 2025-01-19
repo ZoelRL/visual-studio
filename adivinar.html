@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Operadores Matemáticos</title>
+</head>
+<body>
+  <script>
+    const MSG = "Pon un número";
+    const NUMERO_BUSCADO = 14 // Numero que debe acertar
+    const MSG_MAYOR = "El número buscado es mayor"
+    const MSG_MENOR = "El número buscado es menor"
+    const MSG_ACERTADO = "Enhorabuena!! has adivinado el número"
+    
+    let numero = 0;
+    let acertado = false;
+
+
+    while (!acertado) { // mientra no acierte
+
+      numero = prompt(MSG) //pido un número
+
+      if(numero == NUMERO_BUSCADO) // si lo adivina, acertado lo pongo a true
+        acertado = true
+      else if(numero < NUMERO_BUSCADO){ //si es menor
+        alert(`${MSG_MENOR}`)
+      }else{
+        alert(`${MSG_MAYOR}`) // si es mayor
+      }
+    }
+
+    document.write(`${MSG_ACERTADO}<br>`)
+
+
+  </script>
+</body>
+</html>

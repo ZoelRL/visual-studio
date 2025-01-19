@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas de Multiplicar</title>
+    <style>
+     
+    </style>
+    <script>
+        function generarTablas() {
+            var i = 1;
+            var salida = '';
+
+            while (i <= 10) {
+                salida += '<h2>Tabla del ' + i + '</h2>';
+                salida += '<table><thead><tr><th>Multiplicador</th><th>Resultado</th></tr></thead><tbody>';
+                var j = 1;
+                while (j <= 10) {
+                    salida += '<tr><td>' + i + ' x ' + j + '</td><td>' + (i * j) + '</td></tr>';
+                    j++;
+                }
+                salida += '</tbody></table>';
+                i++;
+            }
+
+            document.getElementById('tablas').innerHTML = salida;
+        }
+    </script>
+</head>
+<body onload="generarTablas()">
+    <h1>Tablas de Multiplicar del 1 al 10</h1>
+    <div id="tablas"></div>
+</body>
+</html>

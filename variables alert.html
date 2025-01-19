@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>Acceso al sistema</h1>
+  <h2>Saludo al usuario</h2>
+
+  <p>
+    Bienvenido al sistema 
+    <strong>
+      <script>
+        const MSG_PREG_NOMBRE = "¿Cómo te llamas?";
+        let nombre;
+    
+        //Leo el nombre introducido por el usuario, le pregunto su nombre
+        nombre = prompt(MSG_PREG_NOMBRE)
+        
+        //Escribo el nombre en el navegador
+        document.write(nombre);
+      </script>
+    </strong>
+  </p>
+
+  <p>
+    El contenido de este sitio web, como pueden ser los <strong>textos</strong>, los <i>gráficos</i>, 
+    las imágenes y otro tipo de material incluido en el Sitio WebMD, 
+    tiene exclusivamente una finalidad <u>informativa</u>.
+  </p>
+
+</body>
+</html>

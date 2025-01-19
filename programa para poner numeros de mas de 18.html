@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Número</title>
+    <script>
+        function verificarNumero() {
+            var numero = document.getElementById('numero').value;
+            var mensaje = document.getElementById('mensaje');
+
+            if (numero > 18) {
+                mensaje.textContent = 'Número correcto';
+                mensaje.style.color = 'green';
+            } else {
+                mensaje.textContent = 'Solo valen números por encima del 18. Inténtalo de nuevo.';
+                mensaje.style.color = 'red';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Verificar Número</h1>
+    <label for="numero">Ingresa un número:</label>
+    <input type="number" id="numero">
+    <button onclick="verificarNumero()">Verificar</button>
+    <p id="mensaje"></p>
+</body>
+</html>
